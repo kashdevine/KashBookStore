@@ -1,0 +1,12 @@
+﻿@model KashBookStore.Models.DomainModels.Book
+
+<div class="text-center">
+    <h1>Book of the day</h1>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-heading list-group-item-success">
+            <h5>
+                <a asp-controller="Book" asp-action="Details" asp-route-id="@Model.BookID">@Model.Title</a>
+            </h5>
+        </li>
+    </ul>
+</div>
